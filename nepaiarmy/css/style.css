@@ -1,0 +1,22 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.con{
+    width: 1300px;
+    margin: auto;
+}
+.l{
+    float: left;
+}
+.r{
+    float: right;
+}
+.clc{
+    clear: both;
+}
+/* .menu{
+    text-align: center ;
+} */

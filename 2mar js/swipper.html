@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.0/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+    
+      <swiper-container init="false">
+        <swiper-slide>Slide 1</swiper-slide>
+        <swiper-slide>Slide 2</swiper-slide>
+        <swiper-slide>Slide 3</swiper-slide>
+        ...
+      </swiper-container>
+      <script>
+        // swiper element
+        const swiperEl = document.querySelector('swiper-container');
+      
+        // swiper parameters
+        const swiperParams = {
+          slidesPerView: 1,
+          breakpoints: {
+            640: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          },
+          on: {
+            init() {
+              // ...
+            },
+          },
+        };
+      
+        // now we need to assign all parameters to Swiper element
+        Object.assign(swiperEl, swiperParams);
+      
+        // and now initialize it
+        swiperEl.initialize();
+      </script>
+</body>
+</html>

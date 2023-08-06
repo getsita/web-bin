@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>this is class</h1> 
+   <button onclick="document.querySelector('h1').style.color='red'">color</button>
+   <button onclick="document.querySelector('h1').style.background='skyblue'">BG</button>
+   <button onclick="document.querySelector('h1').style.fontSize='77px'">fontSize</button>
+   <button onclick="document.querySelector('h1').style.marginLeft='177px'">marginLeft</button>
+   <button onclick="document.querySelector('h1').style.display='block'">show</button>
+   <button onclick="document.querySelector('h1').style.display='none'">hide</button>
+   <button onclick="document.querySelector('h1').style.visibility='hidden'">visibility</button>
+   <button onclick="document.querySelector('h1').style.visibility='visible'">visible</button>
+   <button onclick="abc()">All</button>
+<script>
+    function abc()
+    {
+        document.querySelector('h1').style.Color='red'
+        document.querySelector('h1').style.background='skyblue'
+        document.querySelector('h1').style.fontSize='77px' 
+    }
+</script>
+<br>
+<button onclick="aa()">show</button>
+<button onclick="bb()">hide</button>
+
+<ul style.display="nono">
+    <li>home</li> <li>services</li> <li>blog</li> <li>contact</li>
+</ul>
+<script>
+    function aa()
+    {
+        if(document .querySelector('ul').style.display=='none')
+        {
+            (document .querySelector('ul').style.display='block')
+  
+        }
+        else
+        {
+                (document .querySelector('ul').style.display='none')
+
+        }
+    }
+  
+</script>
+
+<br>
+<h3>This is home</h3>
+<button onclick="document.querySelector('h3').classList.add('new')">addclass</button>
+<button onclick="document.querySelector('h3').classList.remove('new')">removeclass</button>
+<button onclick="document.querySelector('h3').classList.toggle('new')">toggleclass</button>
+<style>
+    .new{background:red; color: aquamarine; width: 200px; height: 40px;}
+</style>
+
+
+</body>
+</html>

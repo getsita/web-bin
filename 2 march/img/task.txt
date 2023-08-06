@@ -1,0 +1,38 @@
+*{margin: 0px; padding: 0px; box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&family=Work+Sans:wght@400;500&display=swap');
+
+
+.f-mont{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.f-work{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.fw-400{font-weight: 400;}
+.fw-500{font-weight: 500;}
+.fw-900{font-weight: 900;}
+
+.fs-14{font-size: 14px;}
+.fs-18{font-size: 18px;}
+.fs-30{font-size: 30px;}
+.fs-36{font-size: 36px;}
+
+.lh-18{line-height: 18px;}
+.lh-21{line-height: 21px;}
+.lh-22{line-height: 22px;}
+.lh-27{line-height: 27px;}
+.lh-40{line-height: 40px;}
+.lh-44{line-height: 44px;}
+.lh-50{line-height: 50px;}
+.lh-62{line-height: 62px;}
+
+.bg-yellow{
+    background-color: #FFF5CF;
+}
+
+.bg-red{
+    background-color: #f16363;
+}
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bar1,.bar3,.bar2{width: 55px; height: 10px; background: black; margin: 2px 0;}
+        .a .bar2 { opacity: 0;}
+        .a .bar1{transform: rotate(35deg) translate(5px, 11px);}
+        .a .bar3{transform: rotate(-35deg) translate(2px, -11px);}
+
+    </style>
+</head>
+<body>
+    <div class="con" onclick="abc(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
+    <script>
+    function abc(x)
+       {
+        x.classList.toggle('a')
+       }
+    </script>
+
+
+</body>
+</html>

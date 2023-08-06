@@ -1,0 +1,55 @@
+@mixin flex(
+    $jc:start, $ai:start,
+)
+{
+gap:20px; display: flex; justify-content: $jc; align-items: $ai;
+}
+
+
+@mixin res ($min: 0px, $max:480px)
+{
+@media (min-width:$min)  and (max-width:$max)
+ {
+  @content;  
+ }
+}
+
+.con
+{
+   @include flex;
+   @include res 
+   {
+    @include flex(end)
+   }
+   @include res (481px,992px)
+   {
+    @include flex(center)
+   }
+}
+
+.box{
+    background: pink; border :3px solid black; padding: 40px;
+    @include res
+    {
+        background: red
+    }
+    @include res (481px,992px)
+    {
+        background: green
+    }
+}
+
+.con1
+{
+    @include flex(center, start );
+    @include res 
+    {
+     @include flex(end)
+    }
+    
+}
+
+.con2
+{
+    @include flex(end, start );
+}

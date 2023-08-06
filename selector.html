@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box p{color: blue;}/* descedement selectro (space)*/
+        .box > p {color: aquamarine;}/*child selector*/
+        .box + p{ color: chartreuse;}/* adjacement sibling selector*/
+        .box ~ p {color: darkcyan;}/* general sibling selector*/
+    </style>
+</head>
+<body>
+    
+    combinator selector
+    <div class="box">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+         <p> veniam dolor sequi omnis provident ipsum facilis expedita labore?</p>
+        <div class="child">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p> veniam dolor sequi omnis provident ipsum facilis expedita labore?</p> 
+        </div>
+    </div>
+    <p>hgfds</p><p>gdsfaddsfa</p>
+</body>
+</html>

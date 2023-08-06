@@ -1,0 +1,64 @@
+$b:#ccc;
+$w:300px;
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.abc{
+    background-color: $b;
+    width: $w;
+    height: $w;
+}
+//nesting
+nav{
+    background: $b;
+    ul
+    {
+list-style: none;
+li{
+    display: inline;
+    a{
+        color: $b;
+&.hover{
+    background: yellow;
+}
+    }
+}
+    }
+}
+
+
+//mixin
+
+@mixin abc($ww, $hh, $bb:yellow)
+{
+width: $ww; height: $ww; background: $bb;
+}
+.left
+{
+@include abc(200px, 240px, red)
+}
+.right
+{
+    @include abc( 240px, 340px)
+}
+
+//extend/inheritence
+.nn
+{
+    width: 200px/100px*12%;
+    height: 200pox;
+}
+.cleft
+{
+    @extend .nn;
+    background: purple;
+}
+.cright
+{
+    @extend .nn;
+    background: pink;
+}

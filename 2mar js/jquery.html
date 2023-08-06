@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>this is demo</h1>
+    <button class="a">hide</button> 
+    <button class="b">show</button>
+    <button class="c">toggle</button>
+    <button class="d">fadeout</button>
+    <button class="e">fadein</button>
+    <button class="f">fadetoggle</button>
+    <button class="g">slidetoggle</button>
+    <button class="h">slideup</button>
+    <button class="i">slidedown</button>
+    <button class="j">remove</button>
+    <button class="k">empty</button>
+    <button class="l">append</button>
+    <button class="m">prepend</button>
+    <button class="n">before</button>
+    <button class="o">after</button>
+    <button class="p">css</button>
+    <button class="q">addclass</button>
+    <button class="r">removeclass</button>
+    <button class="s">toggleclass</button>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(".a").click(function(){
+            $("h1").hide();
+        })
+
+        $(".b").click(function(){
+            $("h1").hide();
+        })
+
+        $(".c").click(function(){
+            $("h1").toggle();
+        })
+
+        $(".d").click(function(){
+            $("h1").fadeOut(3000);
+        })
+
+        $(".e").click(function(){
+            $("h1").fadeIn();
+        })
+
+        $(".f").click(function(){
+            $("h1").fadeToggle();
+        })
+
+        $(".g").click(function(){
+            $("h1").slideToggle(4000);
+        })
+
+        $(".h").click(function(){
+            $("h1").slideUp();
+        })
+         
+        $(".i").click(function(){
+            $("h1").slideDown();
+        })
+        
+        $(".j").click(function(){
+            $("h1").remove();
+        })
+
+        $(".k").click(function(){
+            $("h1").empty();
+        })
+
+        $(".l").click(function(){
+            $("h1").append();
+        })
+
+        $(".m").click(function(){
+            $("h1").prepend();
+        })
+
+        $(".n").click(function(){
+            $("h1").before();
+        })
+
+        $(".o").click(function(){
+            $("h1").after();
+        })
+
+        $(".p").click(function(){
+            $("h1").css();
+        })
+
+        $(".q").click(function(){
+            $("h1").addClass();
+        })
+
+        $(".r").click(function(){
+            $("h1").removeClass();
+        })
+
+        $(".s").click(function(){
+            $(".s").toggleClass();
+        })
+        
+        
+    </script>
+</body>
+</html>

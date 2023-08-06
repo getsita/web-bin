@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{width:200px; height: 200px; background: red; animation-name: sita;
+        animation-duration: 5s; animation-iteration-count: infinite; animation-delay: 1s;}
+        @keyframes sita{
+            0%{background: rgb(195, 244, 126);}
+            50%{background: palevioletred;}
+            100%{background: powderblue;}
+        }
+        .box1{width: 200px; height: 200px;border: 2px solid black; background: purple; position: absolute;
+        animation-name: ram; animation-duration: 2s; animation-iteration-count:3; animation-delay: 2s;
+     animation-direction: alternate; animation-fill-mode: forwards;}
+        @keyframes ram{
+            0%{left: 0; background: yellow;} 100%{left: 500px; background: greenyellow;}
+        }
+        .box2{width: 200px; height: 200px; background: orangered; animation-name: cc; animation: 2s; animation-iteration-count: infinite;
+        animation-timing-function: linear;}
+        @keyframes cc
+        {
+        0%{ transform:rotate(0deg);}
+        100%{ transform:rotatte(360deg);}
+    }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+
+</body>
+</html>

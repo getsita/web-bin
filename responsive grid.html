@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    .maincon{background-color: green;
+    height: 200px;
+    margin: 5px;}
+
+    .box
+    {
+     margin: 5px;
+    }
+    
+    .sec img
+    {
+   width: 50%;
+    }
+
+@media (max-width:768px)
+ {
+    
+}
+
+@media (min-width:769px) and (max-width:992px)
+{
+  .box
+  {
+    margin: 5px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+ } 
+
+}
+@media (min-width:993px)
+{
+  .sec{
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }  
+}
+</style>
+
+
+</head>
+<body>
+
+    <div class="maincon">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, harum.lorem10 
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, harum.lorem10
+        </p>
+    </div>
+    
+    <div class="sec">
+        <div class="box">
+            <div><img src="https://broadwayinfosys.com/uploads/successgallery/1660458052.jpg" alt=""></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, omnis.</p>
+        </div>
+
+        <div class="box">
+            <div><img src="https://broadwayinfosys.com/uploads/successgallery/1660458052.jpg" alt=""></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, omnis.</p>
+        </div>
+
+        <div class="box">
+            <div><img src="https://broadwayinfosys.com/uploads/successgallery/1660458052.jpg" alt=""></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, omnis.</p>
+        </div>
+    </div>
+
+</body>
+</html>

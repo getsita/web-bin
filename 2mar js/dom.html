@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+
+<body>
+    <img src="a.jpg" >    <img src="b.jpg" >
+    <a href="fb.com">link</a>
+    <a href="tw.com">link 1</a>
+    <div id="demo"> <h1>this is id</h1></div>
+    <div class="demo"><h1>this is class</h1></div>
+    <div class="demo"><h1>this is class1</h1></div>
+    <h2>tags</h2>
+
+
+    <script>
+        var a;
+        a=document.all;
+        console.log(a)
+        a=document.title='abcnepal';
+        console.log(a)
+        a=document.head;
+        console.log(a)
+        a=document.images;
+        console.log(a)
+        a=document.images[0].src='yy.jpg'
+        console.log(a)
+        a=document.links;
+        console.log(a)
+        a=document.links[0].href;
+        console.log(a)
+        document.links[0].href='aa.png'
+
+        a=document.getElementById('demo')
+        console.log(a)
+        a=document.getElementById('demo').innerText
+        console.log(a)
+        a=document.getElementById('demo').innerHTML
+        console.log(a)
+        a=document.getElementsByClassName('demo')[0].innerHTML
+        console.log(a)
+        a=document.getElementsByTagName('h2')[0].innerHTML
+        console.log(a)
+
+
+
+    </script>
+</body>
+</html>

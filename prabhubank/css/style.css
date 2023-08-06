@@ -1,0 +1,38 @@
+*{margin:0px;
+padding: 0px;}
+
+.con{
+    width: 1300px;margin: auto;}
+
+    .top{
+        background: red; width: 100%;height: 40px;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 45px;
+        width: 100%;
+        color: white;
+    }
+    .s-top{ display:flex;
+        justify-content: space-between;
+        height: 40px;
+        width: 100%; 
+        color: white;
+        align-items: center;
+        /* background-color: aqua; */
+        color: black;
+    }
+
+.nabvar ul{display: flex;
+list-style: none;}
+.nabvar li{
+    padding: 15px;
+}
+.video-banner{
+    background: black; 
+    width: 100%; 
+    height: 550px;
+    position: relative;
+}
